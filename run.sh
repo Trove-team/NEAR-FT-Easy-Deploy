@@ -45,7 +45,7 @@ echo "Creating the contract account and deploying the contract"
 near create-account $TOKEN_ADDRESS_PREFIX.$MASTER_ACCOUNT --masterAccount $MASTER_ACCOUNT --initialBalance 25
 
 #Deploy the contract
-near deploy $TOKEN_ADDRESS_PREFIX.$MASTER_ACCOUNT
+near deploy $TOKEN_ADDRESS_PREFIX.$MASTER_ACCOUNT ./out/main.wasm
 
 
 echo "Contract deployed at $TOKEN_ADDRESS_PREFIX.$MASTER_ACCOUNT"
