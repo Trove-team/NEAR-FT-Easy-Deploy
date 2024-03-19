@@ -12,7 +12,7 @@ Node.js
 
 NEAR CLI (3.5.0)
 
-Windows: Virtualization may need to be enabled 
+Windows: Virtualization may need to be enabled
 
 (https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1)
 
@@ -20,7 +20,7 @@ Windows: Virtualization may need to be enabled
 
 We have discovered a potential issue with the current Near cli version which prevents users from creating Near accounts
 
-(https://github.com/near/near-cli/issues/1106) 
+(https://github.com/near/near-cli/issues/1106)
 
 To bypass this issue, rollback the near cli to v3.5.0
 
@@ -34,13 +34,12 @@ or
 
 Nep 141 deployer Tutorial
 
-
 1. Install Visual studio
 
-https://code.visualstudio.com/ 
+https://code.visualstudio.com/
 
 2. Install node.js
-https://nodejs.org/en/download  
+   https://nodejs.org/en/download
 
 3. After installing run **npm -v** (this will confirm the node.js installation version)
 
@@ -51,7 +50,7 @@ https://www.docker.com/
 **MAKE SURE DOCKER IS RUNNING DURING ENTIRE PROCESS**
 
 5. Install Near CLI
-Run **npm install -g near-cli**
+   Run **npm install -g near-cli**
 
 6. Create a NEAR account to act as the fungible token owner
 
@@ -63,13 +62,13 @@ Open terminal to make sure you are running commands on mainnet, as the default i
 
 **Windows:** Run **set NEAR_NETWORK=mainnet**
 
-3.5.0 Run **set NEAR_ENV=mainnet** 
+3.5.0 Run **set NEAR_ENV=mainnet**
 
 Mac: Run **export NEAR_ENV=mainnet**
 
 8. Login to desired fungible token contract address
 
-Run **near login** 
+Run **near login**
 
 - Or **near login --walletUrl https://app.mynearwallet.com/**
 
@@ -87,18 +86,19 @@ Run **near login**
 
 12. Use a 32x32 bit png or svg file and convert to a base 64 plain text data url. Make sure the url is not too long.
 
-- Data url generator: https://base64.guru/converter/encode/image/png 
+- Data url generator: https://base64.guru/converter/encode/image/png
 
 13. Navigate into the near-ft-main folder and find run.sh or run.bat for windows and open it up with notepad or vscode
 
 Edit lines 2–8 with the appropriate information for your token
 
-- Ensure you are using the correct amount of decimals when inputting token supply on line 5 
+- Ensure you are using the correct amount of decimals when inputting token supply on line 5
 
- **(Example: to input a total supply of 10 for a token with 24 decimals would be 10000000000000000000000000)**
+  **(Example: to input a total supply of 10 for a token with 24 decimals would be 10000000000000000000000000)**
 
 14. Using your terminal, navigate into the folder directory
-- **MAC:** 
+
+- **MAC:**
 
 Navigate to near-ft in terminal
 
