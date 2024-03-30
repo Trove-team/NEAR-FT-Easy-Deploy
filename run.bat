@@ -1,11 +1,11 @@
-export NEAR_ENV=mainnet
-export TOKEN_NAME="token"
-export TOKEN_SYMBOL="TKN"
-export TOKEN_DECIMALS=24
-export INITIAL_SUPPLY=1000000000000000000000000000000 #1mil tokens with 24 decimals
-export ICON="" #base64 encoded icon https://base64.guru/converter/encode/image/png
-export TOKEN_ADDRESS_PREFIX="token" #this will be the prefix, eg token.jumpfinance.near
-export MASTER_ACCOUNT="myaccount.near" #this is the master account you will be login with
+set NEAR_ENV=mainnet
+set TOKEN_NAME="token"
+set TOKEN_SYMBOL="TKN"
+set TOKEN_DECIMALS=24
+set INITIAL_SUPPLY=1000000000000000000000000000000 #1mil tokens with 24 decimals
+set ICON="" #base64 encoded icon https://base64.guru/converter/encode/image/png
+set TOKEN_ADDRESS_PREFIX="token" #this will be the prefix, eg token.jumpfinance.near
+set MASTER_ACCOUNT="myaccount.near" #this is the master account you will be login with
 
 
 # This script is used to build the contract and copy the main.wasm file to the host machine.
