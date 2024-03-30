@@ -12,7 +12,7 @@ set TOKEN_ADDRESS_PREFIX=token
 set MASTER_ACCOUNT=myaccount.near
 
 
-echo Do you logged in with near login with your master account: %MASTER_ACCOUNT%? (y/n), you need to have 26 NEAR in your master account.
+echo Do you logged in with near login with your master account: %MASTER_ACCOUNT%? (y/n), you need to have 6 NEAR in your master account.
 set /p answer=
 if /i "%answer%"=="y" (
     echo Yes
@@ -51,7 +51,7 @@ if not exist .\out\main.wasm (
     echo main.wasm file exists
 )
 
-echo Do you want to deploy the contract? (y/n), you need 26 NEAR in your master account.
+echo Do you want to deploy the contract? (y/n), you need 6 NEAR in your master account.
 set /p answer=
 if /i "%answer%"=="y" (
     echo Yes
@@ -62,8 +62,8 @@ if /i "%answer%"=="y" (
 
 echo Creating the contract account and deploying the contract
 
-:: Create the contract account then send 20N for deployment
-call  near create-account %TOKEN_ADDRESS_PREFIX%.%MASTER_ACCOUNT% --masterAccount %MASTER_ACCOUNT% --initialBalance 25 || (
+:: Create the contract account then send 6N for deployment
+call  near create-account %TOKEN_ADDRESS_PREFIX%.%MASTER_ACCOUNT% --masterAccount %MASTER_ACCOUNT% --initialBalance 6 || (
     echo Account creation failed
     pause
     exit /b 1
